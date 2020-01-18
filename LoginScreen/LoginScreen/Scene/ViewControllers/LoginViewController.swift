@@ -31,7 +31,6 @@ class LoginViewController: UIViewController {
   override func viewWillAppear(_ animated: Bool) {
     
     super.viewWillAppear(animated)
-    
     initializeData()
   }
   
@@ -150,10 +149,15 @@ extension LoginViewController: LoginResultProtocol {
     let alert = UIAlertController(title: isSuccess ? "Success": "Error", message: isSuccess ? successMessage: errorMessage, preferredStyle: UIAlertController.Style.alert)
     alert.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: nil))
     self.present(alert, animated: true, completion: nil)
+
   }
   
   func success(user: User?, type: LoginType) {
-    showPopup(isSuccess: true, user: viewModel.user, type: type)
+//    showPopup(isSuccess: true, user: viewModel.user, type: type)
+//    performSegue(withIdentifier: "toMap", sender: (Any).self)
+    if let mvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MapsViewController") as? MapsViewController {
+      self.present(mvc, animated: true, completion: nil)
+    }
   }
   
   func error(error: Error, type: LoginType) {

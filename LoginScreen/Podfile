@@ -9,4 +9,8 @@ target 'LoginScreen' do
 	pod 'FacebookCore'
 	pod 'FacebookLogin'
 	pod 'GoogleSignIn'
+  pod 'NVActivityIndicatorView'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 end
+
