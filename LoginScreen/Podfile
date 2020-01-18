@@ -12,5 +12,7 @@ target 'LoginScreen' do
   pod 'NVActivityIndicatorView'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
 end
 
