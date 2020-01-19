@@ -73,6 +73,14 @@ class MapsViewController: UIViewController {
     
     @objc func buttonAction2(sender: UIButton!) {
         print("Volunteers")
+        let blah = Bundle.main.loadNibNamed("MainView",owner:self, options: nil)?[0] as! UIView
+        self.view.addSubview(blah)
+        UIView.animate(withDuration: 2.0, delay: 10 , animations: { () -> Void in
+
+            blah.transform = .identity
+        })
+        blah.frame.origin.y = 220
+        blah.frame.origin.x = 13
     }
     
     func getDirections(map: GMSMapView, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
