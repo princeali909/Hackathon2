@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ohd-ZZ-E4v">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="533"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5K-kN-oT3">
+                    <rect key="frame" x="0.0" y="0.0" width="322" height="533"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Helping Hand Found!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJN-9y-bJo">
+                            <rect key="frame" x="0.0" y="5" width="322" height="36"/>
+                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agO-bg-RPJ">
+                            <rect key="frame" x="206" y="449" width="93" height="76"/>
+                            <color key="backgroundColor" red="0.82745098039999998" green="0.031372549020000001" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Accept">
+                                <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmh-sw-WvO">
+                            <rect key="frame" x="41" y="449" width="93" height="76"/>
+                            <color key="backgroundColor" red="0.82745098039999998" green="0.031372549020000001" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Decline">
+                                <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volunteering for Saint Jude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVQ-9b-nR1">
+                            <rect key="frame" x="57" y="341" width="208" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Volunteer Picture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="E5O-Vc-utK">
+                            <rect key="frame" x="105" y="49" width="113" height="104"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alex Smith, 27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfn-EU-lhi">
+                            <rect key="frame" x="106" y="161" width="110" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Davis, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaO-QX-IKn">
+                            <rect key="frame" x="124" y="190" width="74" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Charity Picture.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iUi-cO-9qC">
+                            <rect key="frame" x="72" y="230" width="178" height="103"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;I can help you with that!&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LdW-bq-Szu">
+                            <rect key="frame" x="63" y="399" width="197" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vmh-sw-WvO" firstAttribute="top" secondItem="agO-bg-RPJ" secondAttribute="bottom" constant="-62" id="3Xh-AX-CCV"/>
+                        <constraint firstItem="yJN-9y-bJo" firstAttribute="top" secondItem="d5K-kN-oT3" secondAttribute="top" constant="20" id="Cuo-8q-iQw"/>
+                        <constraint firstAttribute="bottom" secondItem="agO-bg-RPJ" secondAttribute="bottom" constant="8" id="Dnx-7I-8AP"/>
+                        <constraint firstAttribute="trailing" secondItem="agO-bg-RPJ" secondAttribute="trailing" constant="42" id="Gxk-PB-PrZ"/>
+                        <constraint firstItem="agO-bg-RPJ" firstAttribute="height" secondItem="d5K-kN-oT3" secondAttribute="height" constant="-162" id="Ja5-v3-4Ly"/>
+                        <constraint firstItem="Vmh-sw-WvO" firstAttribute="height" secondItem="agO-bg-RPJ" secondAttribute="height" id="SlU-Be-xeE"/>
+                        <constraint firstItem="Vmh-sw-WvO" firstAttribute="leading" secondItem="d5K-kN-oT3" secondAttribute="leading" constant="48" id="VcO-vm-OQz"/>
+                        <constraint firstAttribute="bottom" secondItem="Vmh-sw-WvO" secondAttribute="bottom" constant="8" id="W9K-Mf-cgv"/>
+                        <constraint firstItem="agO-bg-RPJ" firstAttribute="centerX" secondItem="d5K-kN-oT3" secondAttribute="centerX" constant="72.5" id="Ytb-je-c6M"/>
+                        <constraint firstItem="yJN-9y-bJo" firstAttribute="centerX" secondItem="d5K-kN-oT3" secondAttribute="centerX" id="iqu-XF-wI8"/>
+                        <constraint firstItem="agO-bg-RPJ" firstAttribute="width" secondItem="d5K-kN-oT3" secondAttribute="width" constant="-229" id="pE0-1H-q5G"/>
+                        <constraint firstItem="yJN-9y-bJo" firstAttribute="width" secondItem="d5K-kN-oT3" secondAttribute="width" id="sBM-WP-3C4"/>
+                        <constraint firstItem="Vmh-sw-WvO" firstAttribute="width" secondItem="agO-bg-RPJ" secondAttribute="width" id="vyF-HQ-A2b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="d5K-kN-oT3" secondAttribute="trailing" id="4wj-P1-Ay4"/>
+                <constraint firstItem="d5K-kN-oT3" firstAttribute="leading" secondItem="ohd-ZZ-E4v" secondAttribute="leading" id="FSk-m2-ssh"/>
+                <constraint firstItem="d5K-kN-oT3" firstAttribute="top" secondItem="ohd-ZZ-E4v" secondAttribute="top" id="Qx5-Go-Dyn"/>
+                <constraint firstAttribute="bottom" secondItem="d5K-kN-oT3" secondAttribute="bottom" id="d6P-B1-dth"/>
+                <constraint firstItem="0us-dY-IuW" firstAttribute="bottom" secondItem="d5K-kN-oT3" secondAttribute="bottom" id="xlB-jC-EAI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0us-dY-IuW"/>
+            <point key="canvasLocation" x="102.89855072463769" y="176.45089285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Charity Picture.jpg" width="490" height="380"/>
+        <image name="Volunteer Picture.jpg" width="555" height="465"/>
+    </resources>
+</document>
