@@ -8,6 +8,7 @@
 
 import UIKit
 import NVActivityIndicatorView
+import PopupDialog
 
 class RequestPopUpViewController: UIViewController {
     @IBOutlet weak var loadAnimation: NVActivityIndicatorView!
@@ -83,6 +84,13 @@ class RequestPopUpViewController: UIViewController {
        
     
      func dismiss() {
-       self.presentingViewController?.dismiss(animated: true, completion: nil)
+        let vc = VolunteerPopUpViewController(nibName: "ProfileInfo", bundle: nil)
+        let popup = PopupDialog(viewController: vc,
+                                buttonAlignment: .horizontal,
+                                transitionStyle: .zoomIn,
+                                tapGestureDismissal: true,
+                                panGestureDismissal: false)
+        present(popup,animated: true, completion: nil)
+//       self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
