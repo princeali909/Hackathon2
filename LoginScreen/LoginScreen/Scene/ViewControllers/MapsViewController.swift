@@ -18,6 +18,7 @@ import NVActivityIndicatorView
 class MapsViewController: UIViewController {
     var locManager = CLLocationManager()
     var onDoneBlock : ((Bool) -> Void)?
+    var loadAnimation: NVActivityIndicatorView!
     
 
   // You don't need to modify the default init(nibName:bundle:) method.
@@ -26,6 +27,8 @@ class MapsViewController: UIViewController {
 //    locManager.requestWhenInUseAuthorization()
     
     var currentLocation: CLLocation!
+        
+        loadAnimation = NVActivityIndicatorView(frame: CGRect(x: 500, y: 500, width: 200, height: 200), type: NVActivityIndicatorType.ballPulse, color: UIColor.black, padding: 10.5)
 
     if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
             CLLocationManager.authorizationStatus() ==  .authorizedAlways){
@@ -61,13 +64,6 @@ class MapsViewController: UIViewController {
     self.view.addSubview(button)
         
         
-    let button2 = UIButton(frame: CGRect(x: 40, y: 40, width: 100, height: 70))
-    button2.backgroundColor = .black
-    button2.setTitle("Volunteers", for: .normal)
-    button2.addTarget(self, action: #selector(buttonAction2), for: .touchUpInside)
-    self.view.addSubview(button2)
-        
-        
         
   }
     
@@ -87,24 +83,9 @@ class MapsViewController: UIViewController {
         
         
         
+        
     }
     
-    @objc func buttonAction2(sender: UIButton!) {
-        print("Volunteers")
-//        let blah = Bundle.main.loadNibNamed("MainView",owner:self, options: nil)?[0] as! UIView
-//        self.view.addSubview(blah)
-//        UIView.animate(withDuration: 2.0, delay: 10 , animations: { () -> Void in
-//
-//            blah.transform = .identity
-//        })
-//        blah.frame.origin.y = 220
-//        blah.frame.origin.x = 13
-        let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 500, y: 500, width: 200, height: 200), type: NVActivityIndicatorType.ballPulse, color: UIColor.black, padding: 10.5)
-        activityIndicatorView.startAnimating()
-        if(activityIndicatorView.isAnimating) {
-            print("it's animating")
-        }
-    }
     
     func getDirections(map: GMSMapView, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         //Here you need to set your origin and destination points and mode
@@ -145,8 +126,10 @@ class MapsViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         //Your code here
-        let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 500, y: 500, width: 200, height: 200), type: NVActivityIndicatorType.ballPulse, color: UIColor.black, padding: 10.5)
-        activityIndicatorView.startAnimating()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("I'm back")
     }
     
 }

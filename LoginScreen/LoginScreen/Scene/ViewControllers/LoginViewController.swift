@@ -31,6 +31,7 @@ class LoginViewController: UIViewController {
     
     super.viewDidLoad()
     locManager.requestWhenInUseAuthorization()
+    
   }
   
   override func viewWillAppear(_ animated: Bool) {

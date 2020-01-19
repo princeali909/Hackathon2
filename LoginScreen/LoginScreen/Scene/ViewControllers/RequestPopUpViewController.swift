@@ -10,7 +10,8 @@ import UIKit
 import NVActivityIndicatorView
 
 class RequestPopUpViewController: UIViewController {
-
+    @IBOutlet weak var loadAnimation: NVActivityIndicatorView!
+    
     var msg = ""
     let TAG = "MessagePopupWithButton"
     var onDoneBlock : ((Bool) -> Void)?
@@ -23,11 +24,13 @@ class RequestPopUpViewController: UIViewController {
     
     @IBOutlet weak var mainView: UIView!
     
+    @IBOutlet weak var input: UILabel!
     
     
     @IBOutlet weak var Cancel: UIButton!
     
     
+    @IBOutlet weak var Request: UITextField!
     
     
     override func viewDidLoad() {
@@ -47,25 +50,39 @@ class RequestPopUpViewController: UIViewController {
         mainView.layer.borderWidth = 3
         //mainView.layer.borderColor = UIColor.red.cgColor
         
+        
+        
     }
     
     
 
     @IBAction func ConfirmClicked(_ sender: Any) {
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        loadAnimation.startAnimating()
+        Confirm.isHidden = true;
+        Cancel.isHidden = true;
+        input.isHidden = true;
+        Request.isHidden = true;
+        input.text = "Searching";
+        let timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { timer in
+            self.dismiss()
+        }
+
     }
     
     
     
     @IBAction func CancelClicked(_ sender: Any) {
-        activityIndicatorView.startAnimating()
-//        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         //Your code here
-        
+        print("dismiss")
+        activityIndicatorView.startAnimating()
     }
+       
     
-
+     func dismiss() {
+       self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
 }

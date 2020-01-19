@@ -11,7 +11,10 @@
             <connections>
                 <outlet property="Cancel" destination="69Q-lN-sWL" id="zdM-ro-iju"/>
                 <outlet property="Confirm" destination="xZP-h6-xgO" id="e1O-2T-6hL"/>
+                <outlet property="Request" destination="7ED-nv-yQl" id="lk8-D9-kx5"/>
                 <outlet property="Text" destination="eBo-Md-9cm" id="0uy-1K-Ibb"/>
+                <outlet property="input" destination="eBo-Md-9cm" id="aRl-UY-cYO"/>
+                <outlet property="loadAnimation" destination="cJQ-Fs-qUu" id="Zcz-qb-1jm"/>
                 <outlet property="mainView" destination="iA9-dz-Ien" id="v9g-7D-pZj"/>
                 <outlet property="view" destination="iN0-l3-epB" id="4qb-sD-1a8"/>
             </connections>
