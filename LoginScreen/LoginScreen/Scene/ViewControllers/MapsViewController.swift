@@ -60,6 +60,10 @@ class MapsViewController: UIViewController {
     let button = UIButton(frame: CGRect(x: 250, y: 675, width: 60, height: 50))
     button.backgroundColor = .black
     button.setTitle("R", for: .normal)
+        button.layer.cornerRadius = 0.5 * button.bounds.size.width
+        button.layer.borderColor = UIColor.lightGray.cgColor
+        button.layer.borderWidth = 1.0
+        button.clipsToBounds = true
     button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     self.view.addSubview(button)
         
