@@ -25,7 +25,7 @@ We wanted to create something that could foster interest in charities. Given the
 
 ### What's Next for Us
 
-- A real-time rating system for volunteers because we want to have the cream of the crop volunteers. 
+- A real-time rating system to prioritize the most optimal volunteers. 
 
 - An in-app chat system, this way the user can give a detailed explanation of what they require assistance with, give additional directions to their location, etc.
 
@@ -37,6 +37,7 @@ We wanted to create something that could foster interest in charities. Given the
 - Google/API: <a href="https://github.com/muhammedali360">Muhammed Ali</a>
 - UI: <a href= "https://github.com/sysadat">Sayed Yoseph Sadat</a>
 - UI: <a href="https://github.com/sarmadf">Sarmad Farooq</a>
+
 ## Installation and Configuration
 
 For installation, first, you need to clone this repository. In order to fetch the code, open your terminal and type in:
@@ -52,13 +53,13 @@ To have the code compile, you need to install some dependencies first. Go to you
 $ pod update
 ```
 
-If there is your first time using Cocoapods, <a href="https://guides.cocoapods.org/using/getting-started.html">here is their website</a>, to get more information and for installation.
+If there is your first time using Cocoapods, <a href="https://guides.cocoapods.org/using/getting-started.html">you should go to their website</a> , for installation and to get more information.
 
 After the pods are installed and up to date, open <b>LoginScreen.xcworkspace</b> with Xcode.
 
 ## Read More 
 
-If you want to read more about the project, such as our inspiration, how we built it, challenges, please check out <a href="https://devpost.com/software/helping-hand-stgbry">out Devpost</a>.
+If you want to read more about the project, such as our inspiration, how we built it, challenges, please check out <a href="https://devpost.com/software/helping-hand-stgbry">our Devpost</a>.
 
 ## Documentation
 
