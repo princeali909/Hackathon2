@@ -74,7 +74,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3M-0m-RpQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="facebook">
+                                                <state key="normal">
                                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -90,7 +90,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS3-l9-Hs5">
                                                 <rect key="frame" x="190" y="0.0" width="70" height="70"/>
-                                                <state key="normal" image="apple"/>
                                                 <connections>
                                                     <action selector="didTapAppleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4R-i8-Hbp"/>
                                                 </connections>
@@ -190,9 +189,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="apple" width="512" height="512"/>
         <image name="background" width="3648" height="5472"/>
-        <image name="facebook" width="512" height="512"/>
         <image name="google" width="512" height="512"/>
     </resources>
 </document>
