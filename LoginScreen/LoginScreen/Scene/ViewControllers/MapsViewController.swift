@@ -47,7 +47,7 @@ class MapsViewController: UIViewController {
     marker.title = "Davis"
     marker.snippet = "California"
     marker.map = mapView
-        getDirections(map: mapView)
+//        getDirections(map: mapView)
     
     
     let button = UIButton(frame: CGRect(x: 300, y: 800, width: 60, height: 50))
@@ -66,16 +66,20 @@ class MapsViewController: UIViewController {
     
     @objc func buttonAction(sender: UIButton!) {
       print("Request")
+        //pull up how may I help you request
+        //Then animation
+        //Then Match
     }
     
     @objc func buttonAction2(sender: UIButton!) {
         print("Volunteers")
     }
     
-    func getDirections(map: GMSMapView) {
+    func getDirections(map: GMSMapView, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         //Here you need to set your origin and destination points and mode
 //        let url = NSURL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyAhKIrr4s0In1c9ac_BBr9isIdUMPV3Rlc")
 
+        
         //OR if you want to use latitude and longitude for source and destination
         let url = NSURL(string: "\("https://maps.googleapis.com/maps/api/directions/json")?origin=\("38.541576"),\("-121.759583")&destination=\("38.561905"),\("-121.766135")&key=AIzaSyAhKIrr4s0In1c9ac_BBr9isIdUMPV3Rlc")
 
