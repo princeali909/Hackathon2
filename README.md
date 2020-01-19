@@ -2,6 +2,8 @@
 
 ## About HackDavis
 
+<img src="/Users/YosephSadat/Documents/HackDavis2020/HackDavisLogo.png" >
+
 ### Hack for Social Good
 
 With the rapid advancement of technology, it is important to use its power in ways that benefit society. HackDavis challenges its participants to hack for social good, and create an opportunity for us to explore the intersection between technology and society.
@@ -33,10 +35,10 @@ We wanted to create something that could foster interest in charities. Given the
 
 ### Creators
 
-- Backend: <a href="https://github.com/princeali909">Ali Halawa</a>.
-- Database: <a href="https://github.com/muhammedali360">Muhammed Ali</a>.
-- UI: <a href= "https://github.com/sysadat">Sayed Yoseph Sadat</a>.
-- UI: <a href="https://github.com/sarmadf">Sarmad Farooqi</a>.
+- Backend: <a href="https://github.com/princeali909">Ali Halawa</a>
+- Google/API: <a href="https://github.com/muhammedali360">Muhammed Ali</a>
+- UI: <a href= "https://github.com/sysadat">Sayed Yoseph Sadat</a>
+- UI: <a href="https://github.com/sarmadf">Sarmad Farooq</a>
 ## Installation and Configuration
 
 For installation, first, you need to clone this repository. In order to fetch the code, open your terminal and type in:
