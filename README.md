@@ -2,8 +2,6 @@
 
 ## About HackDavis
 
-<img src="/Users/YosephSadat/Documents/HackDavis2020/HackDavisLogo.png" >
-
 ### Hack for Social Good
 
 With the rapid advancement of technology, it is important to use its power in ways that benefit society. HackDavis challenges its participants to hack for social good, and create an opportunity for us to explore the intersection between technology and society.
