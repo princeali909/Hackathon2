@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11FAD5DADE455C67651FCEA5 /* Pods_LoginScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B950E707CB11C9DE6BD1EAFB /* Pods_LoginScreen.framework */; };
-		1FF8FDF623D3BA11008762B0 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF8FDF523D3BA11008762B0 /* MapsViewController.swift */; };
+		1FBAA3E623D3D3BC00D30D36 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAA3E523D3D3BC00D30D36 /* MapsViewController.swift */; };
 		FA1CE22A23682513002A63FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE22923682513002A63FF /* AppDelegate.swift */; };
 		FA1CE22C23682513002A63FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE22B23682513002A63FF /* LoginViewController.swift */; };
 		FA1CE22F23682513002A63FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1CE22D23682513002A63FF /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1FF8FDF523D3BA11008762B0 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapsViewController.swift; path = ../../../../../../../../Documents/MapsViewController.swift; sourceTree = "<group>"; };
+		1FBAA3E523D3D3BC00D30D36 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		9D6716E3580BFC95E7BF7AEC /* Pods-LoginScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.debug.xcconfig"; path = "Target Support Files/Pods-LoginScreen/Pods-LoginScreen.debug.xcconfig"; sourceTree = "<group>"; };
 		B950E707CB11C9DE6BD1EAFB /* Pods_LoginScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86D2F942388C6C840D38A40 /* Pods-LoginScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.release.xcconfig"; path = "Target Support Files/Pods-LoginScreen/Pods-LoginScreen.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		FA1CE23C23682557002A63FF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1FF8FDF523D3BA11008762B0 /* MapsViewController.swift */,
+				1FBAA3E523D3D3BC00D30D36 /* MapsViewController.swift */,
 				FA1CE22B23682513002A63FF /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
@@ -323,10 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBAA3E623D3D3BC00D30D36 /* MapsViewController.swift in Sources */,
 				FA1CE22C23682513002A63FF /* LoginViewController.swift in Sources */,
 				FA1CE22A23682513002A63FF /* AppDelegate.swift in Sources */,
 				FA1CE247236835CE002A63FF /* UIViewExtension.swift in Sources */,
-				1FF8FDF623D3BA11008762B0 /* MapsViewController.swift in Sources */,
 				FA1CE24C23684EAE002A63FF /* UserInApp.swift in Sources */,
 				FA1CE24923684E64002A63FF /* LoginViewModel.swift in Sources */,
 				FA1CE2422368275D002A63FF /* CustomTextField.swift in Sources */,
@@ -478,9 +478,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LoginScreen/LoginScreen.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6SR6248H2;
 				INFOPLIST_FILE = LoginScreen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,9 +501,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LoginScreen/LoginScreen.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6SR6248H2;
 				INFOPLIST_FILE = LoginScreen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
