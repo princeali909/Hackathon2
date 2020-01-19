@@ -11,9 +11,13 @@
 import UIKit
 import GoogleMaps
 import SideMenu
+import PopupDialog
+import NVActivityIndicatorView
+
 
 class MapsViewController: UIViewController {
     var locManager = CLLocationManager()
+    var onDoneBlock : ((Bool) -> Void)?
     
 
   // You don't need to modify the default init(nibName:bundle:) method.
@@ -62,6 +66,9 @@ class MapsViewController: UIViewController {
     button2.setTitle("Volunteers", for: .normal)
     button2.addTarget(self, action: #selector(buttonAction2), for: .touchUpInside)
     self.view.addSubview(button2)
+        
+        
+        
   }
     
     @objc func buttonAction(sender: UIButton!) {
@@ -69,18 +76,34 @@ class MapsViewController: UIViewController {
         //pull up how may I help you request
         //Then animation
         //Then Match
+        
+        let vc = RequestPopUpViewController(nibName: "EmailConfirmation", bundle: nil)
+        let popup = PopupDialog(viewController: vc,
+                                buttonAlignment: .horizontal,
+                                transitionStyle: .zoomIn,
+                                tapGestureDismissal: true,
+                                panGestureDismissal: false)
+        present(popup,animated: true, completion: nil)
+        
+        
+        
     }
     
     @objc func buttonAction2(sender: UIButton!) {
         print("Volunteers")
-        let blah = Bundle.main.loadNibNamed("MainView",owner:self, options: nil)?[0] as! UIView
-        self.view.addSubview(blah)
-        UIView.animate(withDuration: 2.0, delay: 10 , animations: { () -> Void in
-
-            blah.transform = .identity
-        })
-        blah.frame.origin.y = 220
-        blah.frame.origin.x = 13
+//        let blah = Bundle.main.loadNibNamed("MainView",owner:self, options: nil)?[0] as! UIView
+//        self.view.addSubview(blah)
+//        UIView.animate(withDuration: 2.0, delay: 10 , animations: { () -> Void in
+//
+//            blah.transform = .identity
+//        })
+//        blah.frame.origin.y = 220
+//        blah.frame.origin.x = 13
+        let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 500, y: 500, width: 200, height: 200), type: NVActivityIndicatorType.ballPulse, color: UIColor.black, padding: 10.5)
+        activityIndicatorView.startAnimating()
+        if(activityIndicatorView.isAnimating) {
+            print("it's animating")
+        }
     }
     
     func getDirections(map: GMSMapView, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
@@ -117,8 +140,13 @@ class MapsViewController: UIViewController {
                         print("Error")
                     }
                 }
-
                 task.resume()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //Your code here
+        let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 500, y: 500, width: 200, height: 200), type: NVActivityIndicatorType.ballPulse, color: UIColor.black, padding: 10.5)
+        activityIndicatorView.startAnimating()
     }
     
 }

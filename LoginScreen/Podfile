@@ -15,5 +15,6 @@ target 'LoginScreen' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'SideMenu', '~> 6.0'
+  pod 'PopupDialog'
 end
 
