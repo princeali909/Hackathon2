@@ -11,6 +11,7 @@
 		1FBAA3E623D3D3BC00D30D36 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAA3E523D3D3BC00D30D36 /* MapsViewController.swift */; };
 		1FBAA3E823D4B60400D30D36 /* EmailConfirmation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FBAA3E723D4B60400D30D36 /* EmailConfirmation.xib */; };
 		1FBAA3EA23D4B70200D30D36 /* RequestPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAA3E923D4B70200D30D36 /* RequestPopUpViewController.swift */; };
+		1FBAA3EC23D4DA7700D30D36 /* VolunteerPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBAA3EB23D4DA7700D30D36 /* VolunteerPopUpViewController.swift */; };
 		A671D59C23D41C1A00F4F06E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A671D59B23D41C1A00F4F06E /* MainView.xib */; };
 		A671D59E23D41C2300F4F06E /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671D59D23D41C2300F4F06E /* PopUpView.swift */; };
 		FA1CE22A23682513002A63FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CE22923682513002A63FF /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		1FBAA3E523D3D3BC00D30D36 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		1FBAA3E723D4B60400D30D36 /* EmailConfirmation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmailConfirmation.xib; sourceTree = "<group>"; };
 		1FBAA3E923D4B70200D30D36 /* RequestPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPopUpViewController.swift; sourceTree = "<group>"; };
+		1FBAA3EB23D4DA7700D30D36 /* VolunteerPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerPopUpViewController.swift; sourceTree = "<group>"; };
 		9D6716E3580BFC95E7BF7AEC /* Pods-LoginScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen.debug.xcconfig"; path = "Target Support Files/Pods-LoginScreen/Pods-LoginScreen.debug.xcconfig"; sourceTree = "<group>"; };
 		A671D59B23D41C1A00F4F06E /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		A671D59D23D41C2300F4F06E /* PopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				1FBAA3E523D3D3BC00D30D36 /* MapsViewController.swift */,
 				FA1CE22B23682513002A63FF /* LoginViewController.swift */,
 				1FBAA3E923D4B70200D30D36 /* RequestPopUpViewController.swift */,
+				1FBAA3EB23D4DA7700D30D36 /* VolunteerPopUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				FA1CE22A23682513002A63FF /* AppDelegate.swift in Sources */,
 				A671D59E23D41C2300F4F06E /* PopUpView.swift in Sources */,
 				FA1CE247236835CE002A63FF /* UIViewExtension.swift in Sources */,
+				1FBAA3EC23D4DA7700D30D36 /* VolunteerPopUpViewController.swift in Sources */,
 				FA1CE24C23684EAE002A63FF /* UserInApp.swift in Sources */,
 				FA1CE24923684E64002A63FF /* LoginViewModel.swift in Sources */,
 				FA1CE2422368275D002A63FF /* CustomTextField.swift in Sources */,
