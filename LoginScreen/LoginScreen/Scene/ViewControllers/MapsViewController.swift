@@ -47,17 +47,17 @@ class MapsViewController: UIViewController {
     marker.title = "Davis"
     marker.snippet = "California"
     marker.map = mapView
-//        getDirections(map: mapView)
+        getDirections(map: mapView,latitude: latitude,longitude: longitude)
     
     
-    let button = UIButton(frame: CGRect(x: 300, y: 800, width: 60, height: 50))
+    let button = UIButton(frame: CGRect(x: 250, y: 675, width: 60, height: 50))
     button.backgroundColor = .black
     button.setTitle("R", for: .normal)
     button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     self.view.addSubview(button)
         
         
-    let button2 = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+    let button2 = UIButton(frame: CGRect(x: 40, y: 40, width: 100, height: 70))
     button2.backgroundColor = .black
     button2.setTitle("Volunteers", for: .normal)
     button2.addTarget(self, action: #selector(buttonAction2), for: .touchUpInside)
