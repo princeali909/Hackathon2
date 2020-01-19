@@ -74,10 +74,10 @@ class MapsViewController: UIViewController {
     
     func getDirections(map: GMSMapView) {
         //Here you need to set your origin and destination points and mode
-        let url2 = NSURL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=Machilipatnam&destination=Vijayawada&mode=driving")
+//        let url = NSURL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=AIzaSyAhKIrr4s0In1c9ac_BBr9isIdUMPV3Rlc")
 
         //OR if you want to use latitude and longitude for source and destination
-//        let url = NSURL(string: "\("https://maps.googleapis.com/maps/api/directions/json")?origin=\("17.521100"),\("78.452854")&destination=\("15.1393932"),\("76.9214428")")
+        let url = NSURL(string: "\("https://maps.googleapis.com/maps/api/directions/json")?origin=\("38.541576"),\("-121.759583")&destination=\("38.561905"),\("-121.766135")&key=AIzaSyAhKIrr4s0In1c9ac_BBr9isIdUMPV3Rlc")
 
                 let task = URLSession.shared.dataTask(with: url! as URL) { (data, response, error) -> Void in
 
