@@ -11,8 +11,11 @@ import AuthenticationServices
 import FBSDKCoreKit
 import FBSDKLoginKit
 import GoogleSignIn
+import GoogleMaps
 
 class LoginViewController: UIViewController {
+    
+    var locManager = CLLocationManager();
   
   @IBOutlet weak var userNameTextField: CustomTextField!
   @IBOutlet weak var passwordTextField: CustomTextField!
@@ -21,11 +24,13 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var googleButton: UIButton!
   @IBOutlet weak var appleButton: UIButton!
   let viewModel = LoginViewModel()
+    
+
   
   override func viewDidLoad() {
     
     super.viewDidLoad()
-    
+    locManager.requestWhenInUseAuthorization()
   }
   
   override func viewWillAppear(_ animated: Bool) {
