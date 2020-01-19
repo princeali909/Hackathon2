@@ -1,76 +1,36 @@
-<p align="center">
-    <a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/"><img src="http://iosapptemplates.com/wp-content/uploads/2017/01/ios-login-screen-template-swift-3.png" width="25%" alt = "iOS Login Screen in Swift"/></a>
-</p>
+# HackDavis 2020
 
-**This project has been updated to Swift 5 and Xcode 11.2**
+## About HackDavis
 
-## About
+### Hack for Social Good
 
-This is a simple <a href="https://www.iosapptemplates.com/templates/iphone-login-screen-template-swift-3-freebie">iOS login screen written in Swift 5</a>. It has support for <b>signing in with
-Facebook, Google and specially Apple</b>, as well as the classic email & password form.
+With the rapid advancement of technology, it is important to use its power in ways that benefit society. HackDavis challenges its participants to hack for social good, and create an opportunity for us to explore the intersection between technology and society.
 
-The template uses FacebookLogin and GoogleSignin frameworks, installed with Cocoapods.
+On January 18-19, over 700 students, hackers, and creators will come together for 24 hours of hacking. For the 5th year in a row, we're bringing the most talented students in California to address the world’s most pressing issues. Participants are able to build projects that address many social good initiatives.
 
-## Installation and configuration
+## About the Project
 
-First, you need to clone this repository, in order to fetch the code
+When deciding of an idea, we had one goal in mind: to create something to help people. 
+
+## Installation and Configuration
+
+For installation, first you need to clone this repository. In order to fetch the code, open your terminal and type in:
 
 ```
-$ git clone https://github.com/mrcflorian/login-screen-swift.git
+$ git clone https://github.com/princeali909/Hackathon2.git
+
 ```
 
-In order to compile your code, you need to install the dependencies first (in our case, the
-frameworks from Twitter and Facebook). You can simply do this by running the following command
-in the root folder of the project (where the Pods file lives):
+To have the code compile, you need to install some dependecies first. Go to your project folder (the lcoation of the Pods file) and run:
 
 ```
 $ pod update
 ```
 
-If you're not familiar with Cocoapods, <a href="https://guides.cocoapods.org/using/getting-started.html">checkout their website</a>, to see how you can install it.
+If there is your first time using Cocoapods,<a href="https://guides.cocoapods.org/using/getting-started.html">here is their website</a>, to get more information and for installation.
 
-
-Once the pods were installed properly, open <b>LoginScreen.xcworkspace</b> with Xcode and run the project.
-
-Everything should be working fine. There's one more thing to do though, since the code is using
-some default Facebook & Google applications. You need to update the code so that it uses your apps.
-
-Open the <b>Info.plist</b> file (as source code) and update the following piece of code with your correct
-API keys:
-
-```
-<key>CFBundleURLTypes</key>
-<array>
-    <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-            <string>fb285315185217069</string>
-        </array>
-    </dict>
-</array>
-<key>FacebookAppID</key>
-<string>285315185217069</string>
-<key>FacebookDisplayName</key>
-<string>iOSAppTemplates</string>
-<key>LSApplicationQueriesSchemes</key>
-<array>
-    <string>fbapi</string>
-    <string>fb-messenger-api</string>
-    <string>fbauth2</string>
-    <string>fbshareextension</string>
-    <string>twitter</string>
-    <string>twitterauth</string>
-</array>
-
-```
-For Sign in with apple, you need to configure something on Certificates, Identifiers and Profiles. 
-https://www.iosapptemplates.com/blog/ios-development/sign-in-with-apple-swift 
-Check out the link above and do step 1 and step 2.
+After the pods are installed and up to date, open <b>LoginScreen.xcworkspace</b> with Xcode.
 
 ## Documentation
 
-The interface of the login screen can be found in Interface/LoginScreen.storyboard. The template uses auto layout contraints, to display the UI elements.
-
-The core class is LoginViewController, which contains all the logic for the three different types of authentication. The code is pretty short and easy to understand.
-
-If you want even more details on the project, please visit <a href="http://iosapptemplates.com/templates/login-screen-in-swift-3-freebie/">iOS App Templates</a>.
+If you want more details on how everything works, please check out <a href = "https://developer.apple.com/documentation/swift">Swift Documentation</a>.
